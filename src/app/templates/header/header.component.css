@@ -1,0 +1,41 @@
+.justify-content-end {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-item {
+    float: right;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-item a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: violet;
+}
+
+
+/* li a:hover:not(.active) {
+    background-color: #111;
+  } */
+
+.active {
+    background-color: #921271;
+}
+
+.card {
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    /* box-shadow: 50px 10px 5px grey; */
+}
+
+ ::selection {
+    color: #F73AC8;
+    background: black;
+    border-radius: 100px;
+}

@@ -1,0 +1,64 @@
+body {
+    /* color: #F73AC8; */
+    /* background-image: linear-gradient(to bottom, #9b0b76, #a60752, #a32434, #963b1b, #834d08); */
+    /* background-image: linear-gradient(to top, #580360, #55002f, #3d070f, #240c00, #040302); */
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.active {
+    background-color: #921271;
+}
+
+.card {
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff5e7;
+    margin-top: 5rem;
+}
+
+ ::selection {
+    color: #F73AC8;
+    background: black;
+    border-radius: 100px;
+}
+
+.container {
+    /* background-color: #3d070f; */
+    margin-top: 5rem;
+    height: 40rem;
+    padding: 20px;
+    width: 70rem;
+    overflow: auto;
+}
+
+.container::-webkit-scrollbar {
+    width: 1em;
+}
+
+.container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.container::-webkit-scrollbar-thumb {
+    /* background-color: darkgrey; */
+    background-image: linear-gradient(to bottom, #580360, #55002f, #3d070f, #240c00, #040302);
+    border-radius: 10px;
+    /* outline: 1px solid slategrey; */
+}
+
+p {
+    text-align-last: left;
+}
+
+.left-card {
+    float: left;
+}
+
+.right-card {
+    width: 30rem;
+    float: right;
+    margin-top: 20rem;
+}

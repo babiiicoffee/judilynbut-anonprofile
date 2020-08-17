@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body {
+    /* background-image: linear-gradient(to top, #580360, #55002f, #3d070f, #240c00, #040302); */
+    font-family: 'Poppins', sans-serif;
+    /* background-image: url('assets/images/background.png'); */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

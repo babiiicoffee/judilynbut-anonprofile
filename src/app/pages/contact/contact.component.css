@@ -1,0 +1,60 @@
+body {
+    font-family: Poppins;
+    color: #F73AC8;
+    /* background-image: linear-gradient(to bottom, #9b0b76, #a60752, #a32434, #963b1b, #834d08); */
+    /* background-image: linear-gradient(to top, #580360, #55002f, #3d070f, #240c00, #040302); */
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.title {
+    font-weight: bold;
+    padding: .7rem;
+    letter-spacing: 5px;
+}
+
+.container {
+    margin-top: 5rem;
+    height: 32rem;
+    padding: 20px;
+    width: 50rem;
+}
+
+.card {
+    width: 50rem;
+    background-color: #ffbd4a;
+    padding: 10px;
+}
+
+.card-body {
+    background-color: #fff5e7;
+}
+
+input {
+    margin: 5;
+    border-radius: 25px;
+    padding: .7rem;
+    width: 20rem;
+}
+
+input:focus {
+    /* background-color: yellow; */
+    border-radius: 1rem;
+}
+
+.message {
+    height: 10rem;
+}
+
+button {
+    width: 7rem;
+    padding: .7rem;
+    border-radius: 25px;
+}
+
+ ::selection {
+    color: #F73AC8;
+    background: black;
+    border-radius: 100px;
+}
