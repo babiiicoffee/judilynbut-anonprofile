@@ -7,7 +7,8 @@
     <!-- <base href="<?php echo $this->config->base_url(); ?>" /> -->
 </head>
 
-<div class="container shadow-lg p-3 mb-5 ">
+<input type="button" value="Download PDF" class="btn btn-success" (click)="SavePDF()">
+<div class="container shadow-lg p-3 mb-5 " id="content" #content>
     <div class="card">
         <div class="inside-card">
             <div class="card-body">
@@ -66,7 +67,6 @@
                                     <li>ANGULAR</li>
                                     <li>JAVA</li>
                                 </ul>
-                                <!-- </p> -->
                         </div>
                     </div>
 
@@ -95,8 +95,32 @@
 
                 </div>
             </div>
-
             <hr>
         </div>
     </div>
 </div>
+<!-- <div class="container">
+    <h1>This is an Angular App!</h1>
+    <input type="button" value="Download PDF" class="btn btn-success" (click)="SavePDF()">
+    <br/><br/>
+    <div class="container" id="content" #content>
+        <table class="table table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+            <tr *ngFor="let item of Data">
+                <th>{{item.Id}}</th>
+                <th>{{item.Name}}</th>
+                <th>{{item.Salary}}</th>
+            </tr>
+        </table>
+    </div>
+</div> -->
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.0.0/jspdf.umd.min.js"></script> -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.0.0/jspdf.umd.min.js"></script> -->
