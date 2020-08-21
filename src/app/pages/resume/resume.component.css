@@ -18,6 +18,17 @@ img {
     user-select: none;
 }
 
+.card-body {
+    margin-bottom: 3rem;
+}
+
+.right-header {
+    /* background-color: white; */
+    width: 25rem;
+    margin-left: 15rem;
+    margin-top: 2rem;
+}
+
 .style {
     background-color: #ee495d;
 }
@@ -45,13 +56,6 @@ p.pink-font {
 
 .background-info {
     text-align: center;
-}
-
-.vl {
-    border-left: 10px solid #ffbd4a;
-    height: 40;
-    float: left;
-    margin-left: 6rem;
 }
 
 hr {
@@ -107,20 +111,22 @@ hr {
     color: black;
 }
 
- ::selection {
+
+/* ::selection {
     color: #F73AC8;
     background: black;
     border-radius: 100px;
-}
+} */
 
 
 /* **************************************** */
 
 .container {
-    overflow: auto;
+    /* overflow: auto; */
     height: 45rem;
     width: 49rem;
     padding: 20px;
+    margin-top: 3rem;
 }
 
 .container::-webkit-scrollbar {

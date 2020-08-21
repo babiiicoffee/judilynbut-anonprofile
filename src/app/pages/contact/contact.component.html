@@ -15,18 +15,20 @@
         <div class="card shadow-lg p-3 mb-5 ">
             <div class="card-body">
                 <div class="row">
-                    <div class="col">
+                    <!-- <div class="col">
                         <img draggable="false" src="assets/images/me1.png" class="card-img-top" alt="judilyn but-anon">
-                    </div>
+                    </div> -->
                     <div class="col">
                         <div class="title">KEEP IN TOUCH</div>
-                        <div>
-                            <input type="text" name="name" id="name" value="Jude">
-                            <input type="email" name="email" id="email" value="07judilynb@gmail.com">
-                            <input type="text" name="subject" id="subject" value="Test">
-                            <input type="text" name="message" id="message" value="Test message ♥">
-                            <input type="button" value="Send Message">
-                        </div>
+                        <form [formGroup]="sendEmail" (ngSubmit)="onSend()">
+                            <input id="name" class="form-control" formControlName="name" value="Jude" placeholder="name" required>
+                            <input class="form-control" type="email" name="email" id="email" value="07judilynb@gmail.com" formControlName="email" placeholder="email" required>
+                            <input class="form-control" type="text" name="subject" id="subject" value="Test" formControlName="subject" placeholder="subject" required>
+                            <input class="form-control" type="text" name="message" id="message" value="Test message ♥" formControlName="message" placeholder="message" required>
+                            <button type="button" class="btn btn-success" value="Send Message" [disabled]="!sendEmail.valid">Send</button>
+                        </form>
+
+
                     </div>
                 </div>
             </div>

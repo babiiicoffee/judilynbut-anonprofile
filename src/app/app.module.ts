@@ -13,6 +13,8 @@ import { FooterComponent } from './templates/footer/footer.component';
 import { HeaderComponent } from './templates/header/header.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ProjectsComponent } from './pages/projects/projects.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 const appRoutes: Routes = [
@@ -21,8 +23,8 @@ const appRoutes: Routes = [
     component: HomePageComponent
   },
   {
-    path : 'about',
-    component : AboutComponent
+    path: 'about',
+    component: AboutComponent
   },
   {
     path: "hobbies",
@@ -33,16 +35,16 @@ const appRoutes: Routes = [
     component: ContactComponent
   },
   {
-    path : 'resume',
-    component : ResumeComponent
+    path: 'resume',
+    component: ResumeComponent
   },
   {
-    path : "projects",
-    component : ProjectsComponent
+    path: "projects",
+    component: ProjectsComponent
   },
   {
-    path : 'error404',
-    component : Error404Component
+    path: 'error404',
+    component: Error404Component
   },
   {
     path: '**',
@@ -66,7 +68,10 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(appRoutes),
+    BrowserAnimationsModule,
+    // MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

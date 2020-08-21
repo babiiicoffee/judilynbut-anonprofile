@@ -5,6 +5,14 @@
     overflow: hidden;
 }
 
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+}
+
 .nav-item {
     float: right;
     font-family: 'Poppins', sans-serif;
@@ -34,8 +42,14 @@
     /* box-shadow: 50px 10px 5px grey; */
 }
 
- ::selection {
+
+/* ::selection {
     color: #F73AC8;
     background: black;
     border-radius: 100px;
+} */
+
+.logo {
+    height: 50px;
+    width: 50px;
 }

@@ -12,13 +12,4 @@ export class HomePageComponent implements OnInit {
   ngOnInit() {
   }
 
-  onEmail() {
-    window.open("https://blog.mailtrap.io/angular-send-email/", "_blank");
-  }
-  onPDF() {
-    window.open("https://morioh.com/p/44aeb57cdf81", "_blank");
-  }
-
-
-
 }

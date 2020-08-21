@@ -12,8 +12,4 @@ export class Error404Component implements OnInit {
   ngOnInit() {
   }
 
-  goHome(){
-    
-  }
-
 }
