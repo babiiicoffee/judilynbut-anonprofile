@@ -58,18 +58,28 @@ p.pink-font {
 hr {
     border: 0.13rem solid #ffbd4a;
     width: 43rem;
+    background-color: #ffbd4a;
 }
 
 .hr3 {
     border: 0.13rem solid #ffbd4a;
     margin-left: 0rem;
     width: 17.7rem;
+    background-color: #ffbd4a;
 }
 
 .hr4 {
     margin-left: 6.2rem;
     border: 0.15rem solid #ffbd4a;
     width: 5rem;
+    background-color: #ffbd4a;
+}
+
+.hr5 {
+    border: 0.13rem solid #ffbd4a;
+    margin-left: 0rem;
+    width: 21.5rem;
+    background-color: #ffbd4a;
 }
 
 .icons {
@@ -82,7 +92,7 @@ hr {
     height: 30rem;
     margin-left: 1rem;
     margin-top: 0rem;
-    background-color: black;
+    background-color: #ffbd4a;
     width: 0;
 }
 
