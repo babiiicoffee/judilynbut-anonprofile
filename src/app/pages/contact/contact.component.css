@@ -92,3 +92,10 @@ input.ng-untouched {
 input.ng-touched {
     border-left: 5px solid #a94442;
 }
+
+h2 {
+    color:#FEB66C;
+}
+img {
+    color:#FEB66C;
+}

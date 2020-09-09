@@ -15,6 +15,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 
 const appRoutes: Routes = [
@@ -69,6 +70,7 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     // MatInputModule
