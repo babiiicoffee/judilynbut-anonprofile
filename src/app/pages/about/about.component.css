@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: 'Poppins', sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -85,4 +85,33 @@ hr {
 
 .account-link{
     font-size: 15px;
+}
+
+img {
+    width: 1.5rem;
+}
+
+a {
+    padding-right: 10px;
+} */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: whitesmoke
+}
+
+.container{
+    margin-top : 5rem;
+}
+
+.pink-font{
+    font-weight: bold;
+    color: #FF3081;
+}
+
+.btn {
+    background-color : #FF3081;
+    font-weight: bold;
 }

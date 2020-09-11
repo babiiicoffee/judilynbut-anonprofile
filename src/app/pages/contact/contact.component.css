@@ -1,8 +1,5 @@
 body {
     font-family: Poppins;
-    color: #F73AC8;
-    /* background-image: linear-gradient(to bottom, #9b0b76, #a60752, #a32434, #963b1b, #834d08); */
-    /* background-image: linear-gradient(to top, #580360, #55002f, #3d070f, #240c00, #040302); */
     font-family: 'Poppins', sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -93,9 +90,13 @@ input.ng-touched {
     border-left: 5px solid #a94442;
 }
 
-h2 {
+/* h2 {
     color:#FEB66C;
 }
 img {
     color:#FEB66C;
+} */
+
+.form-container {
+    background-color: #FF3081;
 }

@@ -10,7 +10,8 @@ header {
     top: 0px;
     width: 100%;
     z-index: 2;
-    background-color: white;
+    /* font-weight: bold; */
+    background-color: black;
 }
 
 .nav-item {
@@ -23,33 +24,11 @@ header {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    color: violet;
+    color: #FF3081
 }
-
-
-/* li a:hover:not(.active) {
-    background-color: #111;
-  } */
-
-/* .active {
-    background-color: #921271;
-} */
-
-.card {
-    background-color: transparent;
-    padding: 10px;
-    text-align: center;
-    /* box-shadow: 50px 10px 5px grey; */
-}
-
-
-/* ::selection {
-    color: #F73AC8;
-    background: black;
-    border-radius: 100px;
-} */
 
 .logo {
     height: 50px;
     width: 50px;
 }
+ 

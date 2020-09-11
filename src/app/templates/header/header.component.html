@@ -1,27 +1,28 @@
 <!-- <h1>this is hobbies page</h1> -->
 <header>
 
-    <nav class="navbar navbar-light ">
-        <!-- <img draggable="false" src="../../../assets/images/my-logo.png" class="logo" alt=""> -->
-        <img draggable="false" src="../../../assets/images/my-logo.png" class="logo" alt="">
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <!-- <a class="nav-link active" href="<php echo base_url('index.php/pages/view/aboutme') ?>">About Me</a> -->
-                <a class="nav-link active" href="#aboutme" [routerLink]="['about']">About Me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#resume" [routerLink]="['resume']">Resume</a>
-            </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="#projects" [routerLink]="['projects']">Projects</a>
-            </li> -->
-            <li class="nav-item">
-                <!-- <a class="nav-link" href="#hobbies">Hobbies</a> -->
-                <a class="nav-link" href="#Hobbies" [routerLink]="['hobbies']">Hobbies</a>
-            </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="#contact" [routerLink]="['contact']">Contact</a>
-            </li> -->
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar-target">
+        <div class="container">
+            <a href="homepage"><img draggable="false" src="../../../assets/images/logo.png" class="logo" alt=""></a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse">
+            <ul class="nav justify-content-end navbar-nav nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="homepage#about-me-section">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="homepage#resume-section">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <!-- <a class="nav-link" href="#hobbies">Hobbies</a> -->
+                    <a class="nav-link" href="homepage#hobbies-section">Hobbies</a>
+                </li>
+            </ul>
+        </div>
+        </div>
     </nav>
 </header>

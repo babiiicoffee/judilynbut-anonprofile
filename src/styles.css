@@ -4,68 +4,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 body {
-    /* background-image: linear-gradient(to top, #580360, #55002f, #3d070f, #240c00, #040302); */
     font-family: 'Poppins', sans-serif;
-    /* background-image: url('assets/images/background.png'); */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
     margin-bottom: 2rem;
+    color: whitesmoke;
 }
 
 ::-webkit-scrollbar {
     width: 1em;
 }
 
-/* ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-image: linear-gradient(to top, #580360, #55002f, #3d070f, #240c00, #040302);
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px black;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    background-image: linear-gradient(to top, #580360, #55002f, #3d070f, #240c00, #040302);
+    background-color: #FF3081;
     border-radius: 10px;
-    outline: 1px solid slategrey;
-} */
+    outline: 1px solid black;
+}
 
 ::selection {
-    background: #FFC930;
+    background: #FF3081;
     /* background: #FFC800; */
     /* background: #F73AC8; */
     color: black;
     border-radius: 100px;
 }
 
-
-/* 
-html,
-body {
-    height: 100%;
-} */
-
-body {
-    margin: 0;
-    background-color: black;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+h1 {
+    font-weight: bold;
+    color: #FF3081
 }
 
-.container::-webkit-scrollbar {
-    width: 1em;
-}
-
-.container::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-.container::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(to bottom, #580360, #55002f, #3d070f, #240c00, #040302);
-    border-radius: 10px;
-}
-
-.horizontal-divider  {
-    border: 0.13rem solid #ffbd4a;
-    margin-left: 25rem;
-}

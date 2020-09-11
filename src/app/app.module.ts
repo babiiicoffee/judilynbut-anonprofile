@@ -48,6 +48,10 @@ const appRoutes: Routes = [
     component: Error404Component
   },
   {
+    path: 'homepage',
+    component : HomePageComponent
+  },
+  {
     path: '**',
     redirectTo: '/error404'
   }
