@@ -8,82 +8,86 @@
 </head>
 
 <body>
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-md-7 heading-section text-center ">
-                    <h1 class="mb-4 animate__animated animate__bounceInUp">Contact Me</h1>
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+            <div class="col-md-7 heading-section text-center ">
+                <h1 class="mb-4 animate__animated animate__bounceInUp">Contact Me</h1>
+            </div>
+        </div>
+
+
+
+        <div class="row no-gutters block-9">
+            <div class="col-md-6 order-md-last d-flex">
+                <form [formGroup]="sendEmail" class="bg form-container  p-md-5">
+                    <h2 class="text-center" style="color:black;font-weight: 600;">Message Me</h2>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name" formControlName="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Email" formControlName="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Subject" formControlName="subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"
+                            formControlName="message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" (ngSubmit)="onSend()" value="Send Message" class="btn  py-3 px-5">
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="col-md-6 d-flex">
+                <img src="assets/images/mee.png" alt="" srcset="">
+            </div>
+
+        </div>
+        <div class="row d-flex contact-info mb-5">
+            <div class="col-md-6 col-lg-3 d-flex ">
+                <div class="align-self-stretch box p-4 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img draggable="false" style="height: 3rem" src="assets/images/address.svg">
+                    </div>
+                    <h3 class="mb-4">Address</h3>
+                    <p>San Alberto Carmelite Formation Center, Naspit Road, Talamban Cebu City, Cebu</p>
                 </div>
             </div>
 
-            <div class="row d-flex contact-info mb-5">
-                <div class="col-md-6 col-lg-3 d-flex ">
-                    <div class="align-self-stretch box p-4 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <img draggable="false" style="height: 3rem" src="assets/images/address.svg">
-                        </div>
-                        <h3 class="mb-4">Address</h3>
-                        <p>San Alberto Carmelite Formation Center, Naspit Road, Talamban Cebu City, Cebu</p>
+            <div class="col-md-6 col-lg-3 d-flex ">
+                <div class="align-self-stretch box p-4 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img draggable="false" style="height: 3rem" src="assets/images/phone.svg">
                     </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 d-flex ">
-                    <div class="align-self-stretch box p-4 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <img draggable="false" style="height: 3rem" src="assets/images/phone.svg">
-                        </div>
-                        <h3 class="mb-4">Contact Number</h3>
-                        <p><a href="#Contact">0956 817 7656</a></p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-3 d-flex ">
-                    <div class="align-self-stretch box p-4 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <img draggable="false" style="height: 3rem" src="assets/images/paper-plane.svg">
-                        </div>
-                        <h3 class="mb-4">Email Address</h3>
-                        <p><a href="mailto:ziekind07@gmail.com">ziekind07@gmail.com</a></p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 d-flex ">
-                    <div class="align-self-stretch box p-4 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <img draggable="false" style="height: 3rem" src="assets/images/search.svg">
-                        </div>
-                        <h3 class="mb-4">Website</h3>
-                        <p><a href="#">dsdsd</a></p>
-                    </div>
+                    <h3 class="mb-4">Contact Number</h3>
+                    <p><a href="#Contact">0956 817 7656</a></p>
                 </div>
             </div>
 
-            <div class="row no-gutters block-9">
-                <div class="col-md-6 order-md-last d-flex">
-                    <form [formGroup]="sendEmail" class="bg form-container p-4 p-md-5 contact-form">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" formControlName="name">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Email" formControlName="email">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject" formControlName="subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message" formControlName="message"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" (ngSubmit)="onSend()" value="Send Message" class="btn btn-primary py-3 px-5" >
-                        </div>
-                    </form>
-
+            <div class="col-md-6 col-lg-3 d-flex ">
+                <div class="align-self-stretch box p-4 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img draggable="false" style="height: 3rem" src="assets/images/paper-plane.svg">
+                    </div>
+                    <h3 class="mb-4">Email Address</h3>
+                    <p><a href="mailto:ziekind07@gmail.com">ziekind07@gmail.com</a></p>
                 </div>
-
-                <div class="col-md-6 d-flex">
-                    <img src="assets/images/mee.png" alt="" srcset="">
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex ">
+                <div class="align-self-stretch box p-4 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img draggable="false" style="height: 3rem" src="assets/images/search.svg">
+                    </div>
+                    <h3 class="mb-4">Website</h3>
+                    <p><a href="#">dsdsd</a></p>
                 </div>
             </div>
         </div>
-        
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>

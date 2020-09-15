@@ -114,7 +114,6 @@ hr {
 
 .container {
     height: 45rem;
-    width: 49rem;
     padding: 20px;
     margin-top: 3rem;
 }
@@ -135,11 +134,6 @@ hr {
     width: 10rem;
     height: 10rem;
     margin: 2rem;
-}
-
-.btn {
-    background-color : #FF3081;
-    font-weight: bold;
 }
 
 

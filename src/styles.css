@@ -39,7 +39,15 @@ body {
 
 h1 {
     font-weight: bold;
-    color: #FF3081
+    color: #FF3081;
+}
+
+.btn {
+    background-color : #FF3081;
+}
+.btn:hover {
+    background-color : black;
+    color:white;
 }
 
 * {
@@ -64,8 +72,11 @@ h1 {
     }
     img{
       width: 100%;
+      height: auto;
     }
   }
+
+
 
 
   /* ------------------------------------------------------------------------------- */
