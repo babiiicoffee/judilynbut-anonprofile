@@ -11,6 +11,10 @@ body {
     color: #FF3081;
 }
 
+section{
+    padding: 5rem;
+}
+
 
 @media only screen and (max-width: 568px) {
     

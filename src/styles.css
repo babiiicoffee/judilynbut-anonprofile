@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+/* @import 'bootstrap/bootstrap';
+@import 'bootstrap/variables'; */
+
 body {
     font-family: 'Poppins', sans-serif;
     background-attachment: fixed;
@@ -39,7 +42,6 @@ h1 {
     color: #FF3081
 }
 
-
 * {
     box-sizing: border-box;
   }
@@ -58,8 +60,12 @@ h1 {
     /* For mobile phones: */
     body {
         width: 100%;
+        /* text-align: center; */
     }
     img{
       width: 100%;
     }
   }
+
+
+  /* ------------------------------------------------------------------------------- */
