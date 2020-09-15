@@ -10,3 +10,8 @@ body {
 .pink-font {
     color: #FF3081;
 }
+
+
+@media only screen and (max-width: 568px) {
+    
+}

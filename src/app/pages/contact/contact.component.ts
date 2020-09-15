@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators,FormBuilder } from '@angular/forms';
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -8,23 +8,36 @@ import { FormGroup, FormControl, Validators,FormBuilder } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
+  sendEmail;
+
   constructor(private formBuilder: FormBuilder) {
-     }
+    this.sendEmail = formBuilder.group({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+      // name: new FormControl(''),
+      // email: new FormControl(''),
+      // subject: new FormControl(''),
+      // message: new FormControl('')
+    })
+  }
 
 
   ngOnInit() {
   }
 
-  sendEmail = new FormGroup({
-    name : new FormControl(''),
-    email : new FormControl(''),
-    subject : new FormControl(''),
-    message : new FormControl('')
-  });
+  // sendEmail = new FormGroup({
+  //   name : new FormControl(''),
+  //   email : new FormControl(''),
+  //   subject : new FormControl(''),
+  //   message : new FormControl('')
+  // });
 
 
-  onSend(){
-    console.log(this);
+  onSend() {
+    // console.log(this.sendEmail);
+    this.sendEmail.reset();
   }
 
 }

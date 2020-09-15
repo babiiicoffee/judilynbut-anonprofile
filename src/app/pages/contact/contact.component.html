@@ -3,18 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <link icon="assets/images/logo2.png">
 </head>
 
 <body>
 
-
     <section class="contact-section" id="contact-section">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 heading-section text-center ">
-                    <h1 class="mb-4">Contact Me</h1>
+                    <h1 class="mb-4 animate__animated animate__bounceInUp">Contact Me</h1>
                 </div>
             </div>
 
@@ -28,6 +27,7 @@
                         <p>San Alberto Carmelite Formation Center, Naspit Road, Talamban Cebu City, Cebu</p>
                     </div>
                 </div>
+
                 <div class="col-md-6 col-lg-3 d-flex ">
                     <div class="align-self-stretch box p-4 text-center">
                         <div class="icon d-flex align-items-center justify-content-center">
@@ -37,6 +37,7 @@
                         <p><a href="#Contact">0956 817 7656</a></p>
                     </div>
                 </div>
+                
                 <div class="col-md-6 col-lg-3 d-flex ">
                     <div class="align-self-stretch box p-4 text-center">
                         <div class="icon d-flex align-items-center justify-content-center">
@@ -52,28 +53,28 @@
                             <img draggable="false" style="height: 3rem" src="assets/images/search.svg">
                         </div>
                         <h3 class="mb-4">Website</h3>
-                        <p><a href="#">yoursite.com</a></p>
+                        <p><a href="#">dsdsd</a></p>
                     </div>
                 </div>
             </div>
 
             <div class="row no-gutters block-9">
                 <div class="col-md-6 order-md-last d-flex">
-                    <form class="bg form-container p-4 p-md-5 contact-form">
+                    <form [formGroup]="sendEmail" class="bg form-container p-4 p-md-5 contact-form">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name">
+                            <input type="text" class="form-control" placeholder="Your Name" formControlName="name">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Email">
+                            <input type="text" class="form-control" placeholder="Your Email" formControlName="email">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject">
+                            <input type="text" class="form-control" placeholder="Subject" formControlName="subject">
                         </div>
                         <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message" formControlName="message"></textarea>
                         </div>
                         <div class="form-group">
-                            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                            <input type="submit" (ngSubmit)="onSend()" value="Send Message" class="btn btn-primary py-3 px-5" >
                         </div>
                     </form>
 
