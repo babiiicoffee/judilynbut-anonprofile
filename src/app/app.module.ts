@@ -13,9 +13,9 @@ import { FooterComponent } from './templates/footer/footer.component';
 import { HeaderComponent } from './templates/header/header.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ProjectsComponent } from './pages/projects/projects.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
+
 
 
 const appRoutes: Routes = [
