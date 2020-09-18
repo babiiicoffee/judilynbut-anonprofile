@@ -41,12 +41,12 @@
                     </div>
                 </form> -->
 
-                <form (ngSubmit)="onSubmit(sampleForm)" #sampleForm="ngForm" class="bg form-container  p-md-5">
+                <form (ngSubmit)="onSubmit(messageForm)" #messageForm="ngForm" class="bg form-container  p-md-5">
                     <h2 class="text-center" style="color:black;font-weight: 600;">Message Me</h2>
 
                     <!-- Name -->
                     <div class="form-group">
-                        <input name="firstname" type="text" class="form-control" placeholder="First Name" [(ngModel)]="firstName"
+                        <input name="firstname" type="text" class="form-control" placeholder="First Name" [(ngModel)]="name"
                             required pattern="^[A-Za-z%+ +-]{2,30}$" #fname="ngModel" minlength="2">
 
                         <div id="errors" *ngIf="fname.invalid && (fname.dirty || fname.touched)" class="alert alert-danger">
@@ -73,6 +73,16 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Subject -->
+                    <div class="form-group">
+                        <input name="subject" type="subject" class="form-control" placeholder="Subject" [(ngModel)]="subject"
+                            required required-notification="Enter your email to send verification subject" #subjects="ngModel">
+                        <div *ngIf="subjects.invalid && (subjects.dirty || subjects.touched)" class="alert alert-danger">
+                            <div id="errors" *ngIf="subjects.errors.required">
+                                    Subject is required!
+                            </div>
+                        </div>
+                    </div>
                     <!-- Message -->
                     <div class="form-group">
                         <textarea name="message" type="message" cols="30" rows="7" class="form-control" placeholder="Message" [(ngModel)]="message"
@@ -87,7 +97,7 @@
                     <!-- Sign Up Button -->
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <input [disabled]="sampleForm.form.invalid" type="submit" class="btn btn-default">
+                            <input [disabled]="messageForm.form.invalid" type="submit" class="btn btn-default">
                         </div>
                     </div>
                 </form>

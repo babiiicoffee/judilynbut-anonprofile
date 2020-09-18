@@ -10,8 +10,8 @@ export class ContactComponent implements OnInit {
 
   sendEmail;
 
-  constructor(private formBuilder: FormBuilder) {
-    this.sendEmail = formBuilder.group({
+  constructor(private fb: FormBuilder) {
+    this.sendEmail = fb.group({
       name: "",
       email: "",
       subject: "",
@@ -23,6 +23,11 @@ export class ContactComponent implements OnInit {
     })
   }
 
+  public name: string;
+  public email: string;
+  public subject: string;
+  public message: string;
+  public sampleForm: string;
 
   ngOnInit() {
   }
@@ -35,9 +40,8 @@ export class ContactComponent implements OnInit {
   // });
 
 
-  onSend() {
-    // console.log(this.sendEmail);
-    this.sendEmail.reset();
+  onSubmit(messageForm) {
+
   }
 
 }
