@@ -28,16 +28,15 @@ body {
     background-color: #fff5e7;
 }
 
-input {
+.form-control {
     margin: 5;
-    border-radius: 25px;
     padding: .7rem;
-    width: 20rem;
+    width: 22rem;
 }
 
-input:focus {
+/* input:focus {
     border-radius: 1rem;
-}
+} */
 
 .message {
     height: 10rem;
@@ -77,3 +76,41 @@ button {
 .form-container {
     background-color: #FF3081;
 }
+
+
+    /* For mobile phones: */
+/* @media only screen and (max-width:700px) {
+    
+    body {
+        margin-top: 5rem;
+        height: 32rem;
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+    .container {
+        margin-top: 5rem;
+        height: 32rem;
+        width: 100%;
+        background-color: lightblue;
+        text-align: center;
+        height: auto;
+    }
+    img{
+      width: 100%;
+      height: auto;
+    }
+    .form-container{
+        margin: 2;
+        padding: .7rem;
+        width: 100%;
+    }
+    .form-control {
+        margin: 5;
+        padding: .7rem;
+        width: 18.5rem;
+    }
+    
+  }
+
+ */
