@@ -5,27 +5,15 @@ body {
     background-attachment: fixed;
 }
 
-.title {
-    font-weight: bold;
-    padding: .7rem;
-    letter-spacing: 5px;
-    text-align-last: center;
-}
-
 .container {
-    margin-top: 5rem;
+    /* margin-top: 3rem; */
     height: 32rem;
     padding: 20px;
+    /* background-color: lightblue; */
 }
 
-.card {
-    width: 50rem;
-    background-color: #ffbd4a;
-    padding: 10px;
-}
-
-.card-body {
-    background-color: #fff5e7;
+a {
+    color:#FF3081
 }
 
 .form-control {
@@ -34,9 +22,6 @@ body {
     width: 22rem;
 }
 
-/* input:focus {
-    border-radius: 1rem;
-} */
 
 .message {
     height: 10rem;
@@ -49,37 +34,13 @@ button {
     margin-left: 6rem;
     margin-top: 6rem;
 }
-
-.example-form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
-}
-
-.example-full-width {
-    width: 100%;
-}
-
-/* .ng-valid[required],
-.ng-valid.required {
-    border-left: 5px solid #42A948;
-} */
-
-/* input.ng-untouched {
-    background-color: #fff5e7;
-} */
-
-/* input.ng-touched {
-    border-left: 5px solid #a94442;
-} */
-
 .form-container {
     background-color: #FF3081;
 }
 
 
     /* For mobile phones: */
-/* @media only screen and (max-width:700px) {
+    @media only screen and (max-width:500px) {
     
     body {
         margin-top: 5rem;
@@ -95,6 +56,7 @@ button {
         background-color: lightblue;
         text-align: center;
         height: auto;
+        padding: 0%;
     }
     img{
       width: 100%;
@@ -106,11 +68,15 @@ button {
         width: 100%;
     }
     .form-control {
-        margin: 5;
-        padding: .7rem;
+        /* margin: 5; */
+        /* padding: .7rem; */
         width: 18.5rem;
     }
     
   }
 
- */
+
+
+  * {
+    box-sizing: border-box;
+  }

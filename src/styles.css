@@ -71,9 +71,6 @@ h1 {
     /* For mobile phones: */
     body {
         width: 100%;
-        
-        /* background-color: lightblue; */
-        /* text-align: center; */
     }
     img{
       width: 100%;
@@ -81,9 +78,6 @@ h1 {
     }
     h1 {
         text-align: center;
-    }
-    app-about {
-        background-color: lightblue;
     }
   }
 
