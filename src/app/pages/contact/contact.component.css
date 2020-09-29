@@ -53,7 +53,7 @@ button {
         margin-top: 5rem;
         height: 32rem;
         width: 100%;
-        background-color: lightblue;
+        /* background-color: lightblue; */
         text-align: center;
         height: auto;
         padding: 0%;
@@ -70,7 +70,11 @@ button {
     .form-control {
         /* margin: 5; */
         /* padding: .7rem; */
-        width: 18.5rem;
+        width: 100%;
+    }
+    .alert{
+        font-size: 13px;
+        font-weight: 600;
     }
     
   }
@@ -80,3 +84,12 @@ button {
   * {
     box-sizing: border-box;
   }
+
+  .contact-wrap{
+    letter-spacing: 3px;
+	width: 100%;
+	margin-bottom: 30px;
+	/* background: rgba(255,255,255,.1); */
+	padding: 30px;
+	/* @include border-radius(5px); */
+}

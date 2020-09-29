@@ -8,30 +8,27 @@
 </head>
 
 <body>
-    <!-- <div class="container"> -->
-    <div class="row justify-content-center mb-5 pb-3">
-        <div class="col-md-7 heading-section text-center ">
-            <h1 class="mb-4 animate__animated animate__bounceInUp">Contact Me</h1>
+
+    
+<div class="container">
+    <div class="row justify-content-center pb-5">
+        <div class="col-md-10 heading-section text-center">
+            <h1 class="big big-2">Resume</h1>
+            <p></p>
         </div>
     </div>
-
-
-    <div class="container  justify-content-center ">
-        <div class="row pb-5">
-            <div class="col-md-12 heading-section text-center ">
-                <h1 class="big big-2 text-center ">contact</h1>
-                <p></p>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="contact-wrap">
+                <img draggable="false" src="assets/images/mee.png" alt="" srcset="">
             </div>
         </div>
 
-
-        <div class="row pb-5 justify-content-center">
-
-            <div class="col-md-5 order-md-last d-flex form-column">
+        <div class="col-md-6">
+            <div class="contact-wrap">
                 <form (ngSubmit)="onSubmit(messageForm)" #messageForm="ngForm" class="bg form-container  p-md-5">
                     <h2 class="text-center" style="color:black;font-weight: 600;">Message Me</h2>
 
-                    <!-- Name -->
                     <div class="form-group">
                         <input name="firstname" type="text" class="form-control" placeholder="Name" [(ngModel)]="name"
                             required pattern="^[A-Za-z%+ +-]{2,30}$" #fname="ngModel" minlength="8">
@@ -45,7 +42,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Email -->
                     <div class="form-group">
                         <input name="email" type="email" class="form-control" placeholder="Email" [(ngModel)]="email"
                             pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required required-notification="Enter your email to send verification email"
@@ -60,7 +56,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Subject -->
                     <div class="form-group">
                         <input name="subject" type="subject" class="form-control" placeholder="Subject" [(ngModel)]="subject"
                             required required-notification="Enter your email to send verification subject" #subjects="ngModel">
@@ -70,7 +65,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Message -->
                     <div class="form-group">
                         <textarea name="message" type="message" cols="30" rows="7" class="form-control" placeholder="Message"
                             [(ngModel)]="message" required required-notification="Enter your email to send verification message"
@@ -82,7 +76,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Sign Up Button -->
                     <div class="col-sm-6">
                         <div class="form-group">
                             <input [disabled]="messageForm.form.invalid" type="submit" class="btn btn-default">
@@ -90,60 +83,9 @@
                     </div>
                 </form>
             </div>
-
-            <div class="col-md-5 ima d-flex">
-                <img draggable="false" src="assets/images/mee.png" alt="" srcset="">
-            </div>
-        </div>
-
-        <div class="row links justify-content-center">
-            <div class="col-md-6 col-lg-3 d-flex">
-                <div class="contact-wrap ">
-                    <div class="align-self-stretch box p-4 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <img draggable="false" style="height: 3rem" src="assets/images/address.svg">
-                        </div>
-                        <h3 class="mb-4">Address</h3>
-                        <p>San Alberto Carmelite Formation Center, Naspit Road, Talamban Cebu City, Cebu</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 d-flex">
-                <div class="contact-wrap ">
-                    <div class="align-self-stretch box p-4 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <img draggable="false" style="height: 3rem" src="assets/images/phone.svg">
-                        </div>
-                        <h3 class="mb-4">Contact Number</h3>
-                        <p><a href="#Contact">0956 817 7656</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 d-flex">
-                <div class="contact-wrap ">
-                    <div class="align-self-stretch box p-4 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <img draggable="false" style="height: 3rem" src="assets/images/paper-plane.svg">
-                        </div>
-                        <h3 class="mb-4">Email Address</h3>
-                        <p><a href="mailto:ziekind07@gmail.com">ziekind07@gmail.com</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 d-flex ">
-                <div class="contact-wrap ">
-                    <div class="align-self-stretch box p-4 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <img draggable="false" style="height: 3rem" src="assets/images/search.svg">
-                        </div>
-                        <h3 class="mb-4">Website</h3>
-                        <p><a href="#">judilynbut-anonprofile.web.app</a></p>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
-    <!-- </div> -->
+</div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
