@@ -61,20 +61,48 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+                
                 <li class="nav-item">
-                    <a class="nav-link active" href="/about">About Me</a>
+                    <a class="nav-link " routerLink="/about">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/resume">Resume</a>
+                    <a class="nav-link" routerLink="/resume">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/hobbies">Hobbies</a>
+                    <a class="nav-link" routerLink="/hobbies">Hobbies</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
+                    <a class="nav-link" routerLink="/contact">Contact</a>
                 </li>
+               
+                <!-- <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                  <a [routerLink]="['/about']">About Me</a>
+                </li>
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                  <a [routerLink]="['/resume']">Resume</a>
+                </li>
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                  <a [routerLink]="['/hobbies']">Hobbies</a>
+                </li>
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                  <a [routerLink]="['/contact']">Contact</a>
+                </li> -->
             </ul>
         </div>
     </nav>
 
 </header>
+
+<script>
+
+// Add active class to the current button (highlight it)
+// var header = document.getElementById("navbar-nav");
+//   var btns = header.getElementsByClassName("nav-link");
+//   for (var i = 0; i < btns.length; i++) {
+//     btns[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//     });
+//   }
+</script>
