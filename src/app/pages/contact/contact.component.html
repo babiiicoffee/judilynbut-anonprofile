@@ -13,7 +13,7 @@
 <div class="container">
     <div class="row justify-content-center pb-5">
         <div class="col-md-10 heading-section text-center">
-            <h1 class="big big-2">Resume</h1>
+            <h1 class="big big-2">Contact</h1>
             <p></p>
         </div>
     </div>
@@ -24,21 +24,21 @@
             </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-lg-6">
             <div class="contact-wrap">
                 <form (ngSubmit)="onSubmit(messageForm)" #messageForm="ngForm" class="bg form-container  p-md-5">
                     <h2 class="text-center" style="color:black;font-weight: 600;">Message Me</h2>
 
                     <div class="form-group">
-                        <input name="firstname" type="text" class="form-control" placeholder="Name" [(ngModel)]="name"
-                            required pattern="^[A-Za-z%+ +-]{2,30}$" #fname="ngModel" minlength="8">
+                        <input name="name" type="text" class="form-control" placeholder="Name" [(ngModel)]="name"
+                            required pattern="^[A-Za-z%+ +-]{2,30}$" #fname="ngModel" minlength="2">
 
                         <!-- <div id="errors" *ngIf="fname.invalid && (fname.dirty || fname.touched)" class="alert alert-danger">
                             <div id="errors" *ngIf="fname.errors.required">
                                 Name is required!
                             </div>
                             <div id="errors" *ngIf="fname.errors.minlength">
-                                Name must be REAL!
+                                Name must be REAL! 
                             </div>
                         </div> -->
                     </div>

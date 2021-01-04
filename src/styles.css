@@ -27,8 +27,9 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #FF3081;
-    border-radius: 10px;
+    /* background-color: #FF3081; */
+    background-color: rgba(255,255,255,.1);
+    border-radius: 5px;
     outline: 1px solid black;
 }
 
@@ -45,12 +46,17 @@ h1 {
 }
 
 .btn {
-    background-color : #FF3081;
+  width: 10rem;
+  border-radius: 25px;
+  padding: 10px;
+    background-color :  #FF3081;
+    /* color: white; */
 }
-.btn:hover {
+
+/* .btn:hover {
     background-color : black;
     color:white;
-}
+} */
 
 * {
     box-sizing: border-box;

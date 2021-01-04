@@ -12,80 +12,7 @@ body {
     /* background-color: lightblue; */
 }
 
-a {
-    color:#FF3081
-}
-
-.form-control {
-    margin: 5;
-    padding: .7rem;
-    width: 22rem;
-}
-
-
-.message {
-    height: 10rem;
-}
-
-button {
-    width: 7rem;
-    border-radius: 25px;
-    padding: 10px;
-    margin-left: 6rem;
-    margin-top: 6rem;
-}
-.form-container {
-    background-color: #FF3081;
-}
-
-
-    /* For mobile phones: */
-    @media only screen and (max-width:500px) {
-    
-    body {
-        margin-top: 5rem;
-        height: 32rem;
-        width: 100%;
-        text-align: center;
-        height: auto;
-    }
-    .container {
-        margin-top: 5rem;
-        height: 32rem;
-        width: 100%;
-        /* background-color: lightblue; */
-        text-align: center;
-        height: auto;
-        padding: 0%;
-    }
-    img{
-      width: 100%;
-      height: auto;
-    }
-    .form-container{
-        margin: 2;
-        padding: .7rem;
-        width: 100%;
-    }
-    .form-control {
-        /* margin: 5; */
-        /* padding: .7rem; */
-        width: 100%;
-    }
-    .alert{
-        font-size: 13px;
-        font-weight: 600;
-    }
-    
-  }
-
-
-
-  * {
-    box-sizing: border-box;
-  }
-
-  .contact-wrap{
+.contact-wrap{
     letter-spacing: 3px;
 	width: 100%;
 	margin-bottom: 30px;
@@ -93,3 +20,72 @@ button {
 	padding: 30px;
 	/* @include border-radius(5px); */
 }
+
+.form-container {
+    background-color: #FF3081;
+}
+
+.form-group {
+    margin: 3px 5px 3px 5px;
+}
+
+.form-control {
+    margin: 0px 10px 0px 10px;
+    padding: .7rem;
+    width: 100%;
+}
+
+.btn {
+    width: 7rem;
+    border-radius: 25px;
+    padding: 10px;
+    background-color :  black;
+    color: white;
+    /* background-color: darkgray; */
+    /* margin-left: 6rem; */
+    /* margin-top: 6rem; */
+}
+
+  * {
+    box-sizing: border-box;
+  }
+
+    /* For mobile phones: */
+    @media only screen and (max-width:767.98px) {
+    
+        body {
+            margin-top: 5rem;
+            height: 32rem;
+            width: 100%;
+            text-align: center;
+            height: auto;
+        }
+        .container {
+            margin-top: 5rem;
+            height: 32rem;
+            width: 100%;
+            /* background-color: lightblue; */
+            text-align: center;
+            height: auto;
+            padding: 0%;
+        }
+        img{
+          width: 100%;
+          height: auto;
+        }
+        .form-container{
+            margin: 2;
+            padding: .7rem;
+            width: 100%;
+        }
+        .form-control {
+            /* margin: 5; */
+            /* padding: .7rem; */
+            width: 100%;
+        }
+        .alert{
+            font-size: 13px;
+            font-weight: 600;
+        }
+        
+      }

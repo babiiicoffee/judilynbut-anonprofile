@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "judilynbut-anonprofile"
+  "defaultProject": "judilynbut-anonprofile",
+  "cli": {
+    "analytics": false
+  }
 }
