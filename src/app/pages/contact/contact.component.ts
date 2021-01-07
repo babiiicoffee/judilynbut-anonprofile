@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
-// import { Message } from '../../message';
+import { ContactService } from 'src/app/services/contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -11,16 +11,12 @@ export class ContactComponent implements OnInit {
 
   sendEmail;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private contactService: ContactService) {
     this.sendEmail = fb.group({
       name: "",
       email: "",
       subject: "",
       message: "",
-      // name: new FormControl(''),
-      // email: new FormControl(''),
-      // subject: new FormControl(''),
-      // message: new FormControl('')
     })
   }
 
@@ -40,9 +36,11 @@ export class ContactComponent implements OnInit {
   //   message : new FormControl('')
   // });
 
-
-  onSubmit(messageForm) {
-
+  onSubmit(messageForm){
+    console.log(messageForm.value);
+    this.contactService.sendEmail(messageForm.value).subscribe(data => {
+      console.log(data);
+    });
   }
 
 }
